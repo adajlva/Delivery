@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  font-family: "mukta", Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body { 
+  min-height: 100vh; 
+}
+
+:root {
+  --background-clean: beige;
+  --cor-da-empresa: orange;
+}
+
+/*Estilização do HEADER-NAV*/
+
+.cabecalho {
+  width: 100%;
+  background-image: url(https://thumbs.dreamstime.com/b/esquina-de-comida-mexicana-borde-arriba-abajo-vista-sobre-un-oscuro-fondo-banner-con-espacio-copia-La-est%C3%A1-en-parte-hacia-tacos-191566359.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu .ul-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ul-menu li {
+  list-style: none;
+  padding: 2rem;
+  color: antiquewhite;
+}
+
+.bi-file-person {
+  font-size: 60px;
+  color: var(--background-clean);
+}
+
+ul li#imagem-localização {
+  display: flex;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  margin-right: 0.8rem;
+  align-items: center;
+}
+
+.bi-geo-alt {
+  font-size: 60px;
+  color: var(--background-clean);
+}
+
+.nome-localizacao {
+  font-size: 40px;
+  padding-left: 0;
+}
+
+.bi-card-image {
+  font-size: 60px;
+  color: var(--background-clean);
+}
+
+/* ESTILIZAÇÃO DO CONTEÚDO DA PÁGINA  */
+
+.menuSuperior {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.bi-chevron-double-left {
+  font-size: 60px;
+  padding-left: 2rem;
+}
+
+.frase {
+  font-size: 48px;
+  color: var(--cor-da-empresa);
+  font-weight: 700;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black;
+}
+
+.bi-cart-x {
+  font-size: 60px;
+  padding-right: 2rem;
+  color: red;
+}
+
+/* ESTILIZAÇÃO DOS PRODUTOS */
+
+.produtos {
+  margin-bottom: 60px;
+}
+.div-prod {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+  width: 50vw;
+  border: 2px solid var(--cor-da-empresa);
+  margin: auto;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgb(145, 102, 23);
+  border-radius: 2rem;
+}
+
+.imagem-produto {
+  max-width: 100px;
+}
+
+.icones {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paragrafo {
+  margin-inline: 15px;
+}
+
+.descartar {
+  text-align: center;
+}
+
+.bi-trash {
+  font-size: 40px;
+  color: red;
+  cursor: pointer;
+}
+
+.frase-produto {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.numero-produto {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.bi-dash-square {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.bi-plus-square {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#section-cupom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cupom-container {
+  display: flex;
+  justify-content: center;
+}
+
+.cupom {
+  display: flex;
+  width: 44%;
+  color: grey;
+  padding: 1rem;
+  border-color: var(--cor-da-empresa);
+  border-radius: 8px;
+  text-align: center;
+  font-size: 24px;
+  background-color: var(--background-clean);
+}
+
+#botao-cupom {
+  margin-left: 16px;
+  padding: 1rem 2rem;
+  background-color: var(--cor-da-empresa);
+  border-color: orange;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgb(145, 102, 23);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#valores {
+  margin-top: 64px;
+  text-align: center;
+  font-size: 24px;
+  color: var(--cor-da-empresa);
+  font-weight: 700;
+}
+
+#total-pagamento {
+  margin: auto;
+  display: flex;
+  width: fit-content;
+  align-items: baseline;
+  justify-content: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-self: flex-start;
+  margin-bottom: 16px;
+}
+
+#pagamentos {
+  border-color: orange;
+  padding: 1rem 5rem;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgb(145, 102, 23);
+  font-size: 16px;
+  font-weight: 700;
+  background: linear-gradient(#ffcc00, #ff9900);
+  box-shadow: 0 5px 15px rgb(145, 102, 23);
+  cursor: pointer;
+}
+
+/* ESTILIZAÇÃO DO FOOTER */
+.footer {
+  background-color: var(--background-clean);
+  margin-top: 5rem;
+  
+}
+
+.footer-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.footer-card li {
+  list-style: none;
+}
+
+.footer-card a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer-item {
+  margin: 0.5rem;
+}
+
+i.bi-house {
+  font-size: 60px;
+  color: var(--cor-da-empresa);
+}
+
+i.bi-emoji-smile {
+  font-size: 60px;
+  color: var(--cor-da-empresa);
+}
+
+i.bi-upc-scan {
+  font-size: 60px;
+  color: var(--cor-da-empresa);
+}
+
+i.bi-cart {
+  font-size: 60px;
+  color: var(--cor-da-empresa);
+}
+
+i.bi-stickies {
+  font-size: 60px;
+  color: var(--cor-da-empresa);
+}
+
+.footer-nome-item {
+  font-size: 20px;
+  font-weight: 700;
+  color: gray;
+}
